@@ -114,10 +114,10 @@ def plot_perceptrons(p1, p2, p3, p4):
     ani = animation.FuncAnimation(fig, animate, fargs=(plot1, plot2, plot3, plot4),
         blit=True, interval=67, frames=len(p1[4]), repeat=True)
 
-    Writer = animation.writers['ffmpeg']
-    writer = Writer(fps=15, bitrate=1800)
-    ani.save('perceptrons.mp4', writer=writer)
-    # plt.show()    
+    # Writer = animation.writers['ffmpeg']
+    # writer = Writer(fps=15, bitrate=1800)
+    # ani.save('perceptrons.mp4', writer=writer)
+    plt.show()    
 
 
 def setup_perceptron_plot(p, n, axes):
